@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/website_copy_styles.css">
+  <link rel="stylesheet" href="styles/-copy_debug.css">
+  <link rel="icon" href="images/wylesol_fly.ico" type="image/x-icon">
+  <title>WYLESOL</title>
+</head>
+<body>  
+<div class="container">
+  <div class="mobile_menu">
+     <button onclick="menuappear()" class="dropbtn">MENU</button>
+     <div id="myMenu" class="menu-content">
+      <ul>
+      <li><a href="website_copy.html">WORK</a></li>
+      <li><a href="http://wylesol.com/about/">ABOUT</a></li>
+      <li><a href="http://wylesol.storenvy.com/">STORE</a></li>
+      <li><a href="http://wylesol.tumblr.com/">BLOG</a></li>
+    </div>
+</div>
+
+  <header>
+    <div>
+    	<a href="website_copy.html"><img src=images/wylesol_logo.jpg class="logo"></a>
+    </div>
+    <div class="navbar">
+    <ul class="rightnav">
+    <li>
+    	<a href="website_copy.html">WORK</a> 
+    </li>
+    <li>
+    	<a href="http://wylesol.com/about/">ABOUT</a>
+    </li>
+   <li>
+    	<a href="http://wylesol.storenvy.com/">STORE</a>
+   </li>
+    <li>
+    	<a href="http://wylesol.tumblr.com/">BLOG</a>
+    </li></ul></div>
+    
+</header>
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function menuappear() {
+  document.getElementById("myMenu").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("menu-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<main id="page">
+  
+<div class="art_container">
+    <a href ="http://wylesol.com/#/vinyl-moon/">
+     <div class="artwork"> <img class="art_img" src="images/vinyl_moon.jpg"></div>
+    <p class="art_title">VINYL MOON</p>
+   </a>
+</div>
+
+<div class="art_container">
+  <a href =""> 
+    <div class="artwork"><img class="art_img" src="images/OOGST.jpg"></div>
+      <p class="art_title">OOGST</p>
+    </a>
+    </div>
+
+    <div class="art_container">
+ <a href ="">
+  <div class="artwork"><img class="art_img" src="images/GUARDIAN_REVIEW_COVER.jpg"></div>
+    <p class="art_title">GUARDIAN REVIEW COVER</p>
+  </a>
+  </div>
+
+<div class="art_container">
+  <a href="" ><div class="artwork">
+    <img class="art_img" src="images/NYT_SUBSCRIBER_GUIDE.jpg"></div>
+    <p class="art_title">NYT SUBSCRIBER GUIDE</p>
+  </a>
+  </div>
+</div>
+
+</main>
+
+</div>
+
+</body>
+</html>
